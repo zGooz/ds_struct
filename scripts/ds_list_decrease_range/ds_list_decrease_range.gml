@@ -25,10 +25,10 @@
   */
   
   var list  = argument0;
-  var pos   = argument2;
-  var count = argument3;  
-  var sub_r = argument4;
-  var sub_s = argument5;
+  var pos   = argument1;
+  var count = argument2;  
+  var sub_r = argument3;
+  var sub_s = argument4;
   var _min  = min(pos + count, ds_list_size(list));
   
   for (var i = pos; i < _min; i++;)

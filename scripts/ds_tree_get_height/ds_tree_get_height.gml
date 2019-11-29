@@ -1,5 +1,5 @@
 
-  /// @function ds_tree_get_level(node, [not_closed], [level], [max_level])
+  /// @function ds_tree_get_height(node, [not_closed], [level], [max_level])
 
   /// @arg node
   /// @arg not_closed
@@ -22,7 +22,7 @@
   */
 
   var node       = argument[0];
-  var is_cmp_cls = argument_count ? argument[1] : false;
+  var is_cmp_cls = argument_count     ? argument[1] : false;
   var level      = argument_count > 2 ? argument[2] : 0;
   var max_lvl    = argument_count > 3 ? argument[3] : 0;
   
@@ -42,7 +42,7 @@
             var get_lvl = 0;
             if is_cmp_cls && val[? __DS_TREE_MEMBER_IS_OPEN]
             {
-              get_lvl = ds_tree_get_level(val, is_cmp_cls, next_lvl, max_lvl);
+              get_lvl = ds_tree_get_height(val, is_cmp_cls, next_lvl, max_lvl);
             }
             max_lvl = max(max_lvl, get_lvl);
           }

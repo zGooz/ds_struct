@@ -1,5 +1,5 @@
 
-  /// @function ds_list_change_range(list, pos, count, add_real, add_str)
+  /// @function ds_list_increase_range(list, pos, count, add_real, add_str)
   
   /// @arg list
   /// @arg pos
@@ -25,10 +25,10 @@
   */
   
   var list  = argument0;
-  var pos   = argument2;
-  var count = argument3;  
-  var add_r = argument4;
-  var add_s = argument5;
+  var pos   = argument1;
+  var count = argument2;  
+  var add_r = argument3;
+  var add_s = argument4;
   var _min  = min(pos + count, ds_list_size(list));
   
   for (var i = pos; i < _min; i++;)

@@ -1,15 +1,15 @@
 
-  /// @function ds_list_divide_range(list, pos, count, div_real)
+  /// @function ds_list_power_range(list, pos, count, power)
   
   /// @arg list
   /// @arg pos
   /// @arg count
-  /// @arg factor
+  /// @arg power
   
   /*
       description :
           
-          Divides each list item by a specific number.
+          ...
           
       arguments / parametrs :
       
@@ -24,7 +24,7 @@
   var list  = argument0;
   var pos   = argument1;
   var count = argument2;  
-  var div_r = argument3;
+  var pow_r = argument3;
   var _min  = min(pos + count, ds_list_size(list));
   
   for (var i = pos; i < _min; i++;)
@@ -33,6 +33,6 @@
     var new_pos = pos + i;
     
     if is_real(value)
-        ds_list_replace(list, new_pos, value / div_r);
+        ds_list_replace(list, new_pos, power(value, pow_r));
   }
   
