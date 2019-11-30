@@ -7,7 +7,8 @@
   /*
       description :
     
-          ...
+          Finds the identifier of a node with a specific name 
+          (of course, the first one found, if there are several).
 
       parametrs/arguments :
   
@@ -19,7 +20,6 @@
   
   var tree = argument0;
   var name = argument1;
-
   var main = tree[? __DS_TREE_MAIN_NODE_];
   var list = ds_list_create(); show_message("before cicle " + string(list))
   

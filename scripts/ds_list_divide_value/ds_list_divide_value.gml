@@ -1,37 +1,36 @@
 
-  /// @function ds_list_increase_value(list, value, additive)
+  /// @function ds_list_divide_value(list, value, decrease)
   
   /// @arg list
   /// @arg value
-  /// @arg additive
+  /// @arg factor
   
   /*
       description :
           
-          Adds a certain number to the specific value from the list.
+          Divides a specific value from a list by a certain number.
           
       arguments / parametrs :
       
-      
           [0] - { real } - List.
           [1] - { real } - Value.
-          [2] - { real } - Additive.
+          [2] - { real } - Factor.
           
       return : n/a
   */
   
   var list    = argument0;
   var cmp_val = argument1; 
-  var add     = argument3;
+  var div_r   = argument3;
   
-  if typeof(cmp_val) == typeof(add)
+  if (typeof(cmp_val) == typeof(div_r)) && is_real(cmp_val)
   {
     for (var i = 0; i < ds_list_size(list); i++;)
     {
       var value = list[| i];
       if value == cmp_val
       {
-        ds_list_replace(list, i, value + add);
+          ds_list_replace(list, i, value / div_r);
       }
     }
   }

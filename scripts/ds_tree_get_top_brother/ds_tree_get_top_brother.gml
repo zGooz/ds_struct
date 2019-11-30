@@ -1,12 +1,14 @@
   
-  /// @function ds_tree_get_high_brother(node)
+  /// @function ds_tree_get_top_brother(node)
 
   /// @arg node
 
   /*
       description :
-    
-          ...
+      
+          If you present the tree as a classic widget "tree_view", then this 
+          script returns the node located above this node,
+          if this node is not an ancestor.
 
       parametrs/arguments :
   

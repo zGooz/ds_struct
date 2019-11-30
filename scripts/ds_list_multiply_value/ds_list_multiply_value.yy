@@ -1,8 +1,8 @@
 {
-    "id": "c389f0ac-ae6b-48b3-8258-f15a992ed6ae",
+    "id": "0cf7602f-88f8-4001-8ae4-b85ecc687ea0",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "ds_tree_get_low_node",
+    "name": "ds_list_multiply_value",
     "IsCompatibility": false,
     "IsDnD": false
 }

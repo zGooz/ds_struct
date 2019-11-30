@@ -9,7 +9,7 @@
   /*
       description :
           
-          ...
+          Raises an arbitrary fragment of the list to a certain degree.
           
       arguments / parametrs :
       

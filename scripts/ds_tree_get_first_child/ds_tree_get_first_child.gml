@@ -6,7 +6,7 @@
   /*
       description :
     
-          ...
+          Returns the first child, if any.
 
       parametrs/arguments :
   

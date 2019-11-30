@@ -38,10 +38,10 @@
     
     if is_real(value)
         ds_list_replace(list, new_pos, value - sub_r);
-    else
+    else if is_string(value)
     {
-      value = string_replace_all(value, sub_s, "");
-      ds_list_replace(list, new_pos, value);
+        value = string_replace_all(value, sub_s, "");
+        ds_list_replace(list, new_pos, value);
     }
   }
   

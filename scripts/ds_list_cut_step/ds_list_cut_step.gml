@@ -9,7 +9,8 @@
   /*
       description :
           
-          ...
+          Deletes items through a specific step,
+          starting from a certain position.
           
       arguments / parametrs :
       
@@ -51,6 +52,10 @@
       var _end = min(size - 1, pos);
       for (var i = 0; i < _end; i += step;)
       {
+        if is_undefined(list[| i])
+        {
+          break;
+        }
         ds_list_delete(list, i);
       } break;  
   }

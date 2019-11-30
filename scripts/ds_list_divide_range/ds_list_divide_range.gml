@@ -33,6 +33,8 @@
     var new_pos = pos + i;
     
     if is_real(value)
-        ds_list_replace(list, new_pos, value / div_r);
+    {
+      ds_list_replace(list, new_pos, value / div_r);
+    }
   }
   

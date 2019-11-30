@@ -14,10 +14,10 @@
           
       arguments / parametrs :
       
-          [0] - { real   } - List.
-          [1] - { real   } - Position.
-          [2] - { real   } - Count.    
-          [3] - { real   } - Factor number.
+          [0] - { real } - List.
+          [1] - { real } - Position.
+          [2] - { real } - Count.    
+          [3] - { real } - Factor number.
           
       return : n/a
   */
@@ -35,10 +35,10 @@
     
     if is_real(value)
         ds_list_replace(list, new_pos, value * mul_r);
-    else
+    else if is_string(value)
     {
-      value = string_repeat(value, mul_r);
-      ds_list_replace(list, new_pos, value);
+        value = string_repeat(value, mul_r);
+        ds_list_replace(list, new_pos, value);
     }
   }
   

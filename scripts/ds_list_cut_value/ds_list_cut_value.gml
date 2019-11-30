@@ -7,7 +7,7 @@
   /*
       description :
           
-          ...
+          Deletes all fields with a specific value.
           
       arguments / parametrs :
       
@@ -23,6 +23,11 @@
   for (var i = ds_list_size(list); i > -1; i--;)
   {
     var tmp_val = list[| i];
+    if is_undefined(tmp_val)
+    {
+      break;
+    }
+    
     if tmp_val == value
     {
       ds_list_delete(list, i);

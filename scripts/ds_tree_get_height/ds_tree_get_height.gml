@@ -33,8 +33,7 @@
 
       for (var i = 0; i < size; i++;)
       {
-          var val = list_child[| i];
-          if is_undefined(val) continue;
+          var val      = list_child[| i];
           var next_lvl = level + 1;
 
           if val[? __DS_TREE_MEMBER_IS_NODE]

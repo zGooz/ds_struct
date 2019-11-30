@@ -1,12 +1,13 @@
   
-  /// @function ds_tree_get_high_node(node)
+  /// @function ds_tree_get_top_node(node)
 
   /// @arg node
 
   /*
       description :
     
-          ...
+          If you imagine the tree as a classic widget "tree_view", 
+          then this script returns the node that is above this node.
 
       parametrs/arguments :
   

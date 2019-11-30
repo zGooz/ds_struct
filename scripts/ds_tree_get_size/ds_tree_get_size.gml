@@ -19,12 +19,12 @@
 
   var node       = argument[0];
   var is_cmp_cls = argument_count ? argument[1] : false;
-  var size = 0;
+  var size       = 0;
   
   if node[? __DS_TREE_MEMBER_IS_NODE]
   {
     var list_child = node[? __DS_TREE_MEMBER_CHILDS];
-    size       = ds_list_size(list_child);
+        size       = ds_list_size(list_child);
 
     for (var i = 0; i < size; i++;)
     {

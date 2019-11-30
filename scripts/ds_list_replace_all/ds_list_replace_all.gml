@@ -8,7 +8,7 @@
   /*
       description :
           
-          ...
+          Replace one value in the list with another list.
           
       arguments / parametrs :
       

@@ -38,7 +38,7 @@
     
     if is_real(value)
         ds_list_replace(list, new_pos, value + add_r);
-    else
+    else if is_string(value)
         ds_list_replace(list, new_pos, value + add_s);
   }
   

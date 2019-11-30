@@ -6,7 +6,7 @@
   /*
       description :
     
-          ...
+          Returns the identifier of the parent node, if any.
 
       parametrs/arguments :
   
