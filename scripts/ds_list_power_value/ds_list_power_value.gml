@@ -21,7 +21,7 @@
   
   var list    = argument0;
   var cmp_val = argument1; 
-  var pow_r   = argument3;
+  var pow_r   = argument2;
   
   if (typeof(cmp_val) == typeof(pow_r)) && is_real(cmp_val)
   {

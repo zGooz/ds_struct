@@ -22,7 +22,7 @@
   
   var list    = argument0;
   var cmp_val = argument1; 
-  var add     = argument3;
+  var add     = argument2;
   
   if typeof(cmp_val) == typeof(add)
   {

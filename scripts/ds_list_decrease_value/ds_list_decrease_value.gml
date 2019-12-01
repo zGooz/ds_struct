@@ -21,7 +21,7 @@
   
   var list    = argument0;
   var cmp_val = argument1; 
-  var sub     = argument3;
+  var sub     = argument2;
   
   if typeof(cmp_val) == typeof(sub)
   {

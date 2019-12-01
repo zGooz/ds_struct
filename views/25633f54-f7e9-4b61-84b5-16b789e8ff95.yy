@@ -11,7 +11,7 @@
         "0cf7602f-88f8-4001-8ae4-b85ecc687ea0"
     ],
     "filterType": "GMScript",
-    "folderName": "value",
+    "folderName": "math",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
