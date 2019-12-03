@@ -9,14 +9,15 @@
   /*
       description :
           
-          ...
+          The script uses the function "string_repeat" with respect to all 
+          lines from a given interval that belongs to the list.
           
       arguments / parametrs :
       
-          [0] - {  real  } - List.
-          [1] - {  real  } - Position.
-          [2] - {  real  } - Count.   
-          [3] - { string } - Amount
+          [0] - { real } - List.
+          [1] - { real } - Position.
+          [2] - { real } - Count.   
+          [3] - { real } - Amount
           
       return : n/a
   */

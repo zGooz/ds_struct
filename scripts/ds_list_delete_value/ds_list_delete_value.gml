@@ -1,5 +1,5 @@
 
-  /// @function ds_list_cut_value(list, val)
+  /// @function ds_list_delete_value(list, val)
   
   /// @arg list
   /// @arg value

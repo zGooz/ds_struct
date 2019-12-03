@@ -1,5 +1,5 @@
 
-  /// @function ds_list_turn_into_string_range(list, pos, count, sym_index, sym_amount)
+  /// @function ds_list_string_copy_range(list, pos, count, sym_index, sym_amount)
   
   /// @arg list
   /// @arg pos

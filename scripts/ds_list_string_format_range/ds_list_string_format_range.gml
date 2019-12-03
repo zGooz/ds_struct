@@ -10,7 +10,8 @@
   /*
       description :
           
-          ...
+          The script uses the function "string_format" with respect to all 
+          lines from a given interval that belongs to the list.
           
       arguments / parametrs :
       
@@ -37,7 +38,7 @@
     
     if is_string(value)
     {          
-      value = string_format(value, total, amount);          
+      value = string_format(value, total, dec);          
       ds_list_replace(list, new_pos, value);
     }
   }

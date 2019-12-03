@@ -8,7 +8,8 @@
   /*
       description :
           
-          ...
+          Values from the list at a given interval
+          are converted to strings, if conversion is possible.
           
       arguments / parametrs :
       

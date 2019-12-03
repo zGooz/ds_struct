@@ -8,7 +8,8 @@
   /*
       description :
           
-          ...
+          The script uses the function "string_lower" with respect to all 
+          lines from a given interval that belongs to the list.
           
       arguments / parametrs :
       
