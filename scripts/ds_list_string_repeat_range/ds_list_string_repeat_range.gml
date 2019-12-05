@@ -30,13 +30,11 @@
   
   for (var i = pos; i < _min; i++;)
   {
-    var value   = list[| i];
-    var new_pos = pos + i;
-    
+    var value = list[| i];
     if is_string(value)
     {
       value = string_repeat(value, amount);          
-      ds_list_replace(list, new_pos, value);
+      ds_list_replace(list, i, value);
     }
   }
   

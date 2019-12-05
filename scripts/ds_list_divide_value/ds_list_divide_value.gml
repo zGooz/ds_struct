@@ -23,15 +23,12 @@
   var cmp_val = argument1; 
   var div_r   = argument2;
   
-  if (typeof(cmp_val) == typeof(div_r)) && is_real(cmp_val)
+  for (var i = 0; i < ds_list_size(list); i++;)
   {
-    for (var i = 0; i < ds_list_size(list); i++;)
+    var value = list[| i];
+    if value == cmp_val
     {
-      var value = list[| i];
-      if value == cmp_val
-      {
-          ds_list_replace(list, i, value / div_r);
-      }
+        ds_list_replace(list, i, value / div_r);
     }
   }
   

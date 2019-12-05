@@ -25,5 +25,5 @@
   var count  = argument3;  
   
   ds_list_delete_range(list, pos,    count);
-  ds_list_insert_range(list, source, count);
+  ds_list_insert_list(list,  source, count);
   

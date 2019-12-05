@@ -27,12 +27,10 @@
   
   for (var i = pos; i < _min; i++;)
   {
-    var value   = list[| i];
-    var new_pos = pos + i;
-    
+    var value = list[| i];    
     if is_real(value)
     {
-      ds_list_replace(list, new_pos, string(value));
+      ds_list_replace(list, i, string(value));
     }
   }
   

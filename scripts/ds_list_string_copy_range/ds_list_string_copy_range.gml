@@ -32,16 +32,14 @@
   
   for (var i = pos; i < _min; i++;)
   {
-    var value   = list[| i];
-    var new_pos = pos + i;
-    
+    var value = list[| i];
     if is_string(value)
     {
       var str_len = string_length(value);
       var cnt     = min(amount, str_len - index);
           value   = string_copy(value, index, cnt);
           
-      ds_list_replace(list, new_pos, value);
+      ds_list_replace(list, i, value);
     }
   }
   

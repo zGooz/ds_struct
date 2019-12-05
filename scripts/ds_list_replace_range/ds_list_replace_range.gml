@@ -8,8 +8,7 @@
   /*
       description :
       
-          Changes the value of several items from the list at once.
-          
+          Changes the value of several items from the list at once.          
           
       arguments / parametrs :
       
@@ -25,11 +24,11 @@
   var pos    = argument2;
   var count  = argument3;  
   var _min   = min(pos + count, ds_list_size(list));  
-  var j      = 0;
+  var j_ind  = 0;
   
-  for (var i = 0; i < _min; i++;)
+  for (var i = pos; i < _min; i++;)
   {
-    var s_val = source[| j++];  
-    ds_list_replace(list, pos + i, s_val);
+    var s_val = source[| j_ind ++];  
+    ds_list_replace(list, i, s_val);
   }
   

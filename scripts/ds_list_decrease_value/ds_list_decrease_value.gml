@@ -23,21 +23,18 @@
   var cmp_val = argument1; 
   var sub     = argument2;
   
-  if typeof(cmp_val) == typeof(sub)
+  for (var i = 0; i < ds_list_size(list); i++;)
   {
-      for (var i = 0; i < ds_list_size(list); i++;)
+    var value = list[| i];
+    if value == cmp_val
+    {
+      if is_real(value)
+          ds_list_replace(list, i, value - sub);
+      else if is_string(value)
       {
-          var value = list[| i];
-          if value == cmp_val
-          {
-            if is_real(value)
-                ds_list_replace(list, i, value - sub);
-            else if is_string(value)
-            {
-                value = string_replace_all(value, sub, "");
-                ds_list_replace(list, i, value);
-            }
-          }
+          value = string_replace_all(value, sub, "");
+          ds_list_replace(list, i, value);
       }
+    }
   }
   

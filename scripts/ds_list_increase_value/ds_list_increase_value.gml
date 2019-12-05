@@ -24,15 +24,12 @@
   var cmp_val = argument1; 
   var add     = argument2;
   
-  if typeof(cmp_val) == typeof(add)
+  for (var i = 0; i < ds_list_size(list); i++;)
   {
-    for (var i = 0; i < ds_list_size(list); i++;)
+    var value = list[| i];
+    if value == cmp_val
     {
-      var value = list[| i];
-      if value == cmp_val
-      {
-        ds_list_replace(list, i, value + add);
-      }
+      ds_list_replace(list, i, value + add);
     }
   }
   

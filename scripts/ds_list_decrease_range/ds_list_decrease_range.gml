@@ -33,15 +33,13 @@
   
   for (var i = pos; i < _min; i++;)
   {
-    var value   = list[| i];
-    var new_pos = pos + i;
-    
+    var value = list[| i];
     if is_real(value)
-        ds_list_replace(list, new_pos, value - sub_r);
+        ds_list_replace(list, i, value - sub_r);
     else if is_string(value)
     {
         value = string_replace_all(value, sub_s, "");
-        ds_list_replace(list, new_pos, value);
+        ds_list_replace(list, i, value);
     }
   }
   

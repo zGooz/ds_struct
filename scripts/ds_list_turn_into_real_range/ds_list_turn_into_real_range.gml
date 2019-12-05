@@ -27,14 +27,12 @@
   
   for (var i = pos; i < _min; i++;)
   {
-    var value   = list[| i];
-    var new_pos = pos + i;
-    
+    var value = list[| i];    
     if is_string(value)
     {
       value = string_digits(value);
       if value == "" continue;
-      ds_list_replace(list, new_pos, real(value));
+      ds_list_replace(list, i, real(value));
     }
   }
   

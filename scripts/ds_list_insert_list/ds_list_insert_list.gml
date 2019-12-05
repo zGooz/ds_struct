@@ -1,5 +1,5 @@
 
-  /// @function ds_list_insert_range(list, source, pos)
+  /// @function ds_list_insert_list_range(list, source, pos)
   
   /// @arg list
   /// @arg source
