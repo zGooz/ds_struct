@@ -10,7 +10,8 @@
   /*
       description :
           
-          ...
+          Performs on all string values in the list that 
+          lie in a certain interval, the function "string_repeat".
           
       arguments / parametrs :
       

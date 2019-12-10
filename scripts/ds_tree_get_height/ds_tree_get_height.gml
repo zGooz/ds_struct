@@ -21,11 +21,11 @@
       return: real
   */
 
-  var node       = argument[0];
-  var is_cmp_cls = argument_count     ? argument[1] : false;
-  var level      = argument_count > 2 ? argument[2] : 0;
-  var max_lvl    = argument_count > 3 ? argument[3] : 0;
-  
+  var node    = argument[0];
+  var is_skip = argument_count     ? argument[1] : false;
+  var level   = argument_count > 2 ? argument[2] : 0;
+  var max_lvl = argument_count > 3 ? argument[3] : 0;
+ 
   if node[? __DS_TREE_MEMBER_IS_NODE]
   {
       var list_child = node[? __DS_TREE_MEMBER_CHILDS];
@@ -33,23 +33,22 @@
 
       for (var i = 0; i < size; i++;)
       {
-          var val      = list_child[| i];
+          var val = list_child[| i];
+          if is_undefined(val) continue;
           var next_lvl = level + 1;
 
           if val[? __DS_TREE_MEMBER_IS_NODE]
           {
             var get_lvl = 0;
-            if is_cmp_cls && val[? __DS_TREE_MEMBER_IS_OPEN]
-            {
-              get_lvl = ds_tree_get_height(val, is_cmp_cls, next_lvl, max_lvl);
-            }
+            var is_open = val[? __DS_TREE_MEMBER_IS_OPEN];
+            if is_skip && !is_open continue;
+            get_lvl = ds_tree_get_height(val, is_skip, next_lvl, max_lvl);
             max_lvl = max(max_lvl, get_lvl);
           }
           else
           {
             max_lvl = max(max_lvl, next_lvl);
           }
-          size += ds_tree_get_size(val, is_cmp_cls);
       }
   }
 

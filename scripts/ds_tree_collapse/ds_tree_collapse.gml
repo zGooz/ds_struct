@@ -2,6 +2,7 @@
   /// @function ds_tree_collapse(tree or node, is_collapse)
 
   /// @arg node
+  /// @arg is_collapse
 
   /*
       description :
